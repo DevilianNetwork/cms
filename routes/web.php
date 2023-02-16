@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,8 @@ Route::view('/', 'homepage');
 //         'phpVersion' => PHP_VERSION,
 //     ]);
 // });
+
+Route::get('/dummy/image/{width}/{height}/{type}/{code}', [ImageController::class, 'dummy']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
