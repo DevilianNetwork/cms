@@ -61,7 +61,7 @@
 
                 <h1 class="sr-only">The best CMS homepage</h1>
 
-                @for ($i = 0; $i < 12; $i++)
+                @for ($i = 0; $i < 24; $i++)
                 <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure>
                         <a href="/{{ $i }}">
@@ -116,7 +116,7 @@
                   </div>
                 </div> 
                 <div>
-                  <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+                  <p>Copyright © 2023 - All right reserved by {{ config('app.name') }}</p>
                 </div>
               </footer>
         </div>
